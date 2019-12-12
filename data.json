@@ -1,0 +1,49 @@
+{
+    "projects": [
+        {
+            "id": "0",
+            "project_name": "Random Quote Generator",
+            "description": "A Random Quote Generator that cycles through different quotes",
+            "technologies": ["HTML", "CSS", "JavaScript"],
+            "live_link": "https://luxjoshyua.github.io/project-1-random-quote-generator/",
+            "github_link": "https://github.com/luxjoshyua/project-1-random-quote-generator",
+            "image_urls": ["images/project1-main-tiny.png", "images/project1-land-1-tiny.png", "images/project1-land-2-tiny.png"]
+        },
+        {
+            "id": "1",
+            "project_name": "List Pagination and Filtering",
+            "description": "Project Two of the FullStack JavaScript tech degree focused list pagination and filtering, applying the knowledge learnt in this unit.",
+            "technologies": ["HTML", "CSS", "JavaScript"],
+            "live_link": "https://luxjoshyua.github.io/project-2-list-pagination-and-filtering/",
+            "github_link": "https://github.com/luxjoshyua/project-2-list-pagination-and-filtering",
+            "image_urls": ["images/project2-main-tiny.png", "images/project2-land-1-tiny.png", "images/project2-land-2-tiny.png"]
+        },
+        {
+            "id": "2",
+            "project_name": "Interactive Form",
+            "description": "The goal of this project was to use JavaScript to enhance an interactive registration form for a fictional conference called 'FullStack Conf.'",
+            "technologies": ["HTML", "CSS", "JavaScript", "jQuery"],
+            "live_link": "https://luxjoshyua.github.io/project-2-list-pagination-and-filtering/",
+            "github_link": "https://github.com/luxjoshyua/project-2-list-pagination-and-filtering",
+            "image_urls": ["images/project3-main-tiny.png", "images/project3-land-1-tiny.png", "images/project3-land-2-tiny.png"]
+        },
+        {
+            "id": "3",
+            "project_name": "OOP Game Show App",
+            "description": "The goal of this project was to create a browser-based, word guessing game: Phrase Hunter. You’ll use JavaScript and OOP (Object-Oriented Programming) to select a random, hidden phrase, which a player tries to guess, by clicking letters on an onscreen keyboard.",
+            "technologies": ["HTML", "CSS", "JavaScript"],
+            "live_link": "https://luxjoshyua.github.io/project-4-OOP-game-show-app/",
+            "github_link": "https://github.com/luxjoshyua/project-4-OOP-game-show-app",
+            "image_urls": ["images/project4-main-tiny.png", "images/project4-land-1-tiny.png", "images/project4-land-2-tiny.png"]
+        },
+        {
+            "id": "4",
+            "project_name": "Public API Requests",
+            "description": "The goal of this project was to build an app for a fictional company called Awesome Startup, a distributed company with remote employees working all over the world. They needed a smart way for employees to share contact information with each other, so we integrated our app with the Random User Generator API (https://randomuser.me/) to grab information for 12 random 'employees,' and then used that data to build a prototype for an Awesome Startup employee directory.",
+            "technologies": ["HTML", "CSS", "JavaScript"],
+            "live_link": "https://luxjoshyua.github.io/project-5-public-api-requests/",
+            "github_link": "https://github.com/luxjoshyua/project-5-public-api-requests",
+            "image_urls": ["images/project5-main-tiny.png", "images/project5-land-1-tiny.png", "images/project5-land-2-tiny.png"]
+        }
+    ]
+}

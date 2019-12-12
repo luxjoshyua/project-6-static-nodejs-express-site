@@ -1,0 +1,22 @@
+{
+  "name": "project-6-static-nodejs-express-site",
+  "version": "1.0.0",
+  "description": "project 6 team treehouse node.js and express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luxjoshyua/project-6-static-nodejs-express-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luxjoshyua/project-6-static-nodejs-express-site/issues"
+  },
+  "homepage": "https://github.com/luxjoshyua/project-6-static-nodejs-express-site#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0"
+  }
+}
