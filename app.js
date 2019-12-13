@@ -1,18 +1,20 @@
 // import express + require express
 const express = require('express');
+
+const routes = require('./routes');
+
 // import body-parser and require
 const bodyParser = require('body-parser');
-// require the data json file
-// const { projects } = require('data.json');
 // require the path module which can be used when setting the absolute path in the express.static function
 const path = require('path');
 // initialise express
 const app = express();
-// setup a new router
-const router = express.Router();
-// define projects
-const data = require('./data.json');
 
+
+
+
+// Import 404 and global error handlers
+const errorHandlers = require('./errorHandlers');
 
 // Setup middleware
 // set `view engine` to `pug`
@@ -20,49 +22,42 @@ app.set('view engine', 'pug');
 // use a static route and the express.static method to serve the static files located in the public folder
 app.use('/static', express.static('public'));
 
-// ==== Setup routes ====
-// An "index" route (/) to render the "Home" page with the locals set to data.projects
-router.get('/', (req, res) => {
-    console.log("Handling request to root or 'home' route, '/'");
-    res.render('index')
-    // app.locals = projects; 
-});
 
-// An "about" route (/about) to render the "About" page
-router.get('/about', (req, res, next) => {
-    res.render('/about');
-});
 
-// Dynamic "project" routes (/project or /projects) based on the id of the project that render a customized version 
-// of the Pug project template to show off each project. 
+// === Handle errors ====
+// error handler sets the error message to user-friendly message, and sets the status code
+// log out user friendly message to the console when app is pointed to non-existent url
 
-// Which means adding data, or "locals", as an object that contains 
-// data to be passed to the Pug template
+// app.use('*', errorHandlers.handle404);
 
-router.get('/project/:paramId', (req, res, next) => {
-    // add data or 'locals' as an object that contains data to be passed to the Pug template
+// app.use((err, req, res, next) => {
+//     console.error(err.message);
+//     if (!err.statusCode) err.statusCode = 500; // Sets a generic server error status code if none is part of the err
+  
+//     if (err.shouldRedirect) {
+//       res.render('error') // Renders a myErrorPage.html for the user
+//     } else {
+//       res.status(err.statusCode).send(err.message); // If shouldRedirect is not defined in our error, sends our original err data
+//     }
+//   });
 
-    const { paramId } = req.params;
-    // console.log(paramId);
-
-    // loop through projects
-    for (let i = 0; i < data.projects.length; i++) {
-        console.log(i);
-        if (data.projects[i].id === paramId) {
-            // return the template that matches that id
-            console.log("The id matches " + paramId)
-            return res.render('project', data.projects[i]);
-        }
-        console.log("The id doesn't match")
-    }
-    // res.send() sends a message to the client e.g. browser
-    return res.send('error');
+// app.get('/', (req, res, next) => {
     
+// })
+
+
+// First check the routes
+app.use('/', routes);
+// If we can't find the route, we pass a 404 error
+app.use(errorHandlers.handle404); 
+// 
+app.use((err, req, res, next) => {
+    console.log(err.status)
+    if (err.status === 404) {
+        res.render('error')
+    }
 })
 
-// define this at the bottom
-// pass router handlers to the app
-app.use(router);
 
 // Start the server, listen on port 3000, log which port the app is listening to
 app.listen(3000, () => {
