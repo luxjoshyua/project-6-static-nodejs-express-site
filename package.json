@@ -4,6 +4,7 @@
   "description": "project 6 team treehouse node.js and express",
   "main": "app.js",
   "scripts": {
+    "start": "nodemon app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/luxjoshyua/project-6-static-nodejs-express-site#readme",
   "dependencies": {
-    "body-parser": "^1.19.0"
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
   }
 }
