@@ -1,6 +1,8 @@
 # FullStack JavaScript TechDegree
 # Project 6: Static Node.js and Express Site 
 
+* Note please reject submission if it doesn't meet all requirements for exceeds expectations!
+
 * The goal of this project was to learn server-side JavaScript, with us having to independently:
     * Create a portfolio site to showcase the projects we've worked on in the course
     * Create a JSON file to store all the data about the projects we've created
