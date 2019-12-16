@@ -3,17 +3,19 @@ const express = require('express');
 // setup a new router
 const router = express.Router();
 // require the data json file + define projects
-const data = require('../data.json');
+const { projects } = require('../data.json');
 
 // ==== Setup routes ====
 // An "index" route (/) to render the "Home" page with the locals set to data.projects
 router.get('/', (req, res) => {
-    res.render('index')
+    console.log("Reached here");
+    res.render('index', { projects });
+    console.log("crashing");
 });
 
 // An "about" route (/about) to render the "About" page
 router.get('/about', (req, res, next) => {
-    res.render('/about');
+    res.render('about');
 });
 
 // Dynamic "project" routes (/project or /projects) based on the id of the project that render a customized version 

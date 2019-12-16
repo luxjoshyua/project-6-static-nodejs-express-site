@@ -18,6 +18,7 @@ const errorHandlers = require('./errorHandlers');
 // set `view engine` to `pug`
 app.set('view engine', 'pug');
 // use a static route and the express.static method to serve the static files located in the public folder
+// when using files in public, needs to be /static instead of /public
 app.use('/static', express.static('public'));
 
 
