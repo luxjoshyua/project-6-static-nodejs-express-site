@@ -8,7 +8,7 @@
             "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link": "https://luxjoshyua.github.io/project-1-random-quote-generator/",
             "github_link": "https://github.com/luxjoshyua/project-1-random-quote-generator",
-            "image_urls": ["images/project1-main-tiny.png", "images/project1-land-1-tiny.png", "images/project1-land-2-tiny.png"]
+            "image_urls": ["/static/images/project1-main-tiny.png", "/static/images/project1-land-1-tiny.png", "/static/images/project1-land-2-tiny.png"]
         },
         {
             "id": "1",
@@ -17,7 +17,7 @@
             "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link": "https://luxjoshyua.github.io/project-2-list-pagination-and-filtering/",
             "github_link": "https://github.com/luxjoshyua/project-2-list-pagination-and-filtering",
-            "image_urls": ["images/project2-main-tiny.png", "images/project2-land-1-tiny.png", "images/project2-land-2-tiny.png"]
+            "image_urls": ["/static/images/project2-main-tiny.png", "/static/images/project2-land-1-tiny.png", "/static/images/project2-land-2-tiny.png"]
         },
         {
             "id": "2",
@@ -26,7 +26,7 @@
             "technologies": ["HTML", "CSS", "JavaScript", "jQuery"],
             "live_link": "https://luxjoshyua.github.io/project-2-list-pagination-and-filtering/",
             "github_link": "https://github.com/luxjoshyua/project-2-list-pagination-and-filtering",
-            "image_urls": ["images/project3-main-tiny.png", "images/project3-land-1-tiny.png", "images/project3-land-2-tiny.png"]
+            "image_urls": ["/static/images/project3-main-tiny.png", "/static/images/project3-land-1-tiny.png", "/static/images/project3-land-2-tiny.png"]
         },
         {
             "id": "3",
@@ -35,7 +35,7 @@
             "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link": "https://luxjoshyua.github.io/project-4-OOP-game-show-app/",
             "github_link": "https://github.com/luxjoshyua/project-4-OOP-game-show-app",
-            "image_urls": ["images/project4-main-tiny.png", "images/project4-land-1-tiny.png", "images/project4-land-2-tiny.png"]
+            "image_urls": ["/static/images/project4-main-tiny.png", "/static/images/project4-land-1-tiny.png", "/static/images/project4-land-2-tiny.png"]
         },
         {
             "id": "4",
@@ -44,7 +44,7 @@
             "technologies": ["HTML", "CSS", "JavaScript"],
             "live_link": "https://luxjoshyua.github.io/project-5-public-api-requests/",
             "github_link": "https://github.com/luxjoshyua/project-5-public-api-requests",
-            "image_urls": ["images/project5-main-tiny.png", "images/project5-land-1-tiny.png", "images/project5-land-2-tiny.png"]
+            "image_urls": ["/static/images/project5-main-tiny.png", "/static/images/project5-land-1-tiny.png", "/static/images/project5-land-2-tiny.png"]
         }
     ]
 }

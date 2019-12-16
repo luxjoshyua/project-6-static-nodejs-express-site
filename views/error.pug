@@ -1,16 +1,8 @@
 <!DOCTYPE html>
 html(class="no-js" lang="en" dir="ltr")
   head
-    meta(charset='utf-8')
-    meta(http-equiv='x-ua-compatible', content='ie=edge')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    title Portfolio Site
-    link(href='https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,800', rel='stylesheet')
-    link(rel='stylesheet', href='/static/css/foundation.css')
-    link(rel='stylesheet', href='/static/css/style.css')
+    title Error page
   body
-
-//- block content
-    h1= message
-    h2= error.status
+    h1 Apologies, we are experiencing an error!
+  //- h2= error.status
     pre #{error.stack}

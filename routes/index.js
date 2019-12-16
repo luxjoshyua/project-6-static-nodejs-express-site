@@ -23,7 +23,6 @@ router.get('/project/:paramId', (req, res, next) => {
     const {
         paramId
     } = req.params;
-    // console.log(paramId);
     // loop through projects
     for (let i = 0; i < data.projects.length; i++) {
         // check what i equals
@@ -32,7 +31,7 @@ router.get('/project/:paramId', (req, res, next) => {
         if (data.projects[i].id === paramId) {
             // console.log("The id matches " + paramId)
             // return the template that matches that id
-            return res.render('project', data.projects[i]);
+            return res.render('project', data.projects[i], console.log("template rendering"));
         }
         // console.log("The id doesn't match")
     }
@@ -40,5 +39,5 @@ router.get('/project/:paramId', (req, res, next) => {
     return res.send('error');
 })
 
-
+// export the router so we can use it in the main app.js file
 module.exports = router;

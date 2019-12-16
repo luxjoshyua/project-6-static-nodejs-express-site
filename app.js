@@ -1,6 +1,7 @@
 // import express + require express
 const express = require('express');
 
+// import routes
 const routes = require('./routes');
 
 // import body-parser and require
@@ -9,9 +10,6 @@ const bodyParser = require('body-parser');
 const path = require('path');
 // initialise express
 const app = express();
-
-
-
 
 // Import 404 and global error handlers
 const errorHandlers = require('./errorHandlers');
@@ -50,11 +48,14 @@ app.use('/static', express.static('public'));
 app.use('/', routes);
 // If we can't find the route, we pass a 404 error
 app.use(errorHandlers.handle404); 
-// 
+// Run the error function 
 app.use((err, req, res, next) => {
     console.log(err.status)
     if (err.status === 404) {
-        res.render('error')
+        // render the error template
+        res.render('error');
+        // set the 404 status code
+        res.status(404);
     }
 })
 
