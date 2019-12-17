@@ -15,7 +15,7 @@ router.all('*', (req, res, next) => {
     // Create new error to handle non-existent routes
     const err = new Error('err');
     err.status = 404;
-    console.log(`Oops, page not found. Status: ${err.status}, Message: ${err.message}, Stack: ${err.stack}`);
+    console.log(`Something went wrong. Status: ${err.status}, Message: ${err.message}, Stack: ${err.stack}`)
     // Pass error to global error handler below
     next(err);
 });
