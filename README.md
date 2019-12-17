@@ -22,6 +22,11 @@
     * Set up your package.json file so that running $ npm start will run the app
 * Use error handling middleware to render a Pug template
 * Customise the style
+   * Font
+   * Background colour
+   * Spacing
+   * Mobile media queries
+   * Fade effect
 
 
 
