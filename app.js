@@ -13,7 +13,6 @@ const errorHandlers = require('./routes/error');
 // initialise new express app
 const app = express();
 
-// require the path module which can be used when setting the absolute path in the express.static function
 // set view engine to pug
 app.set('view engine', 'pug');
 // set route for static files

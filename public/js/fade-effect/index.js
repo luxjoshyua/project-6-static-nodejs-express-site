@@ -19,7 +19,7 @@ const animatedTags = Array.from(
     // look through all the animated tags and see
     // with the getBoundingClientRect if it's in the window
   
-    let delay = 0.15;
+    let delay = 0.10;
   
     animatedTags.forEach(tag => {
       // the () runs it
@@ -30,7 +30,7 @@ const animatedTags = Array.from(
       if (tagTop < window.innerHeight && tagBottom > 0) {
         // keep the s because we want it to be a second
         tag.style.animation = `fadeIn 1s ${delay}s both`;
-        delay = delay + 0.15;
+        delay = delay + 0.10;
       } else {
         tag.style.opacity = 0;
         tag.style.animation = "";

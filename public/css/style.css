@@ -60,7 +60,7 @@ a:hover {
 .image {
   display: inline-block;
   max-width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   border: solid 4px #fefefe;
   border-radius: 0;
   box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
@@ -132,12 +132,12 @@ a:hover {
 }
 
 .portfolio-index .cell {
-  margin-bottom: 15px;
+  margin-bottom: 40px; 
 }
 
 .portfolio-index .cell h5 {
   letter-spacing: 1px;
-  padding-top: 12px;
+  padding-top: 16px; 
 }
 
 .portfolio-meta {
@@ -145,7 +145,7 @@ a:hover {
 }
 
 .portfolio-meta .button {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .portfolio-project p {
@@ -182,6 +182,10 @@ h1.status {
 
 .status p {
   padding-top: 16px;
+}
+
+.project-button:not(:first-of-type) {
+  margin-bottom: 16px;
 }
 
 /* Mobile tweaks to the foundation.css file */
