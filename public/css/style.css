@@ -69,7 +69,7 @@ a:hover {
 
 .portfolio-me {
   padding: 20px;
-  background: #3c3c6fe8;
+  background: #000; 
   color: #fff;
   box-shadow: none !important;
 }
@@ -115,6 +115,7 @@ a:hover {
 
 .portfolio-intro p {
   border-bottom: 1px solid #eaeaea;
+  padding-bottom: 6px;
 }
 
 .portfolio-index {
@@ -191,5 +192,41 @@ h1.status {
 
   .portfolio-meta .button {
     margin-bottom: 12px;
+  }
+}
+
+
+/* Fadein animation effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+h1,
+p,
+h5,
+a,
+img,
+.cell {
+  opacity: 0 !important;
+}
+
+/* fix for IE 10 */
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+
+  /* IE10+ CSS styles go here */
+  h1,
+  p,
+  h5,
+  a,
+  img,
+  .cell {
+    opacity: 1 !important;
   }
 }
