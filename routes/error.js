@@ -25,7 +25,5 @@ router.use((err, req, res, next) => {
     res.render('error')
 })
 
-
 // Export error handlers
-// Assign module.exports an object that references each function
 module.exports = router;

@@ -7,11 +7,11 @@ h4,
 h5,
 p {
   /* font-family: 'Merriweather', serif; */
-  font-family: 'Rubik', sans-serif; 
+  font-family: 'Rubik', sans-serif;
 }
 
 h1 {
-  line-height: 2rem;
+  line-height: 3rem;
 }
 
 h5 {
@@ -69,7 +69,7 @@ a:hover {
 
 .portfolio-me {
   padding: 20px;
-  background: #3c3c6fe8; 
+  background: #3c3c6fe8;
   color: #fff;
   box-shadow: none !important;
 }
@@ -80,9 +80,9 @@ a:hover {
 }
 
 .portfolio-me a {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 600;
-  color: #FFF; 
+  color: #FFF;
   font-size: 13px;
   letter-spacing: 2.5px;
   -webkit-text-transform: uppercase;
@@ -100,7 +100,7 @@ a:hover {
 }
 
 .portfolio-breadcrumb a {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 2.5px;
@@ -110,7 +110,7 @@ a:hover {
 
 .portfolio-intro {
   margin: 0;
-  padding: 40px 50px 30px;
+  padding: 40px 50px 0;
 }
 
 .portfolio-intro p {
@@ -181,4 +181,15 @@ h1.status {
 
 .status p {
   padding-top: 16px;
+}
+
+/* Mobile tweaks to the foundation.css file */
+@media screen and (max-width: 600px) {
+  .grid-x>.small-6 {
+    width: 100%;
+  }
+
+  .portfolio-meta .button {
+    margin-bottom: 12px;
+  }
 }

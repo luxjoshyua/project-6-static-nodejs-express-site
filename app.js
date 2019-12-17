@@ -7,8 +7,7 @@ const bodyParser = require('body-parser');
 const index = require('./routes/index');
 const about = require('./routes/about');
 const projectRoutes = require('./routes/projects');
-
-// Import 404 and global error handlers
+// import 404 and global error handlers
 const errorHandlers = require('./routes/error');
 
 // initialise new express app
@@ -19,8 +18,7 @@ const app = express();
 app.set('view engine', 'pug');
 // set route for static files
 app.use('/static', express.static('public'));
-
-
+// use the routes
 app.use(index);
 app.use(about);
 app.use(projectRoutes);
