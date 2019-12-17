@@ -1,8 +1,14 @@
-<!DOCTYPE html>
-html(class="no-js" lang="en" dir="ltr")
-  head
-    title Error page
-  body
-    h1 Apologies, we are experiencing an error!
-  //- h2= error.status
-    pre #{error.stack}
+extends layout.pug
+
+block content
+  div.error-wrapper
+    .error-content
+      h1.error-text-center=`${error.message}!`
+      br
+      h6.error-text-center See below for the error details
+      h1.error-text-center.status=`Status: ${error.status}`
+        br
+        p=`This is the error stack: ${error.stack}`
+
+
+
