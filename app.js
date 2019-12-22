@@ -13,6 +13,9 @@ const errorHandlers = require('./routes/error');
 // initialise new express app
 const app = express();
 
+// for heroku deployment
+let port = process.env.PORT || 3000; 
+
 // set view engine to pug
 app.set('view engine', 'pug');
 // set route for static files
