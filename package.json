@@ -12,6 +12,9 @@
     "type": "git",
     "url": "git+https://github.com/luxjoshyua/project-6-static-nodejs-express-site.git"
   },
+  "engines": {
+    "node": "10.16.3"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
