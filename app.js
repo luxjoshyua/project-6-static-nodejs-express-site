@@ -14,7 +14,7 @@ const errorHandlers = require('./routes/error');
 const app = express();
 
 // for heroku deployment
-let port = process.env.PORT || 3000; 
+app.listen(process.env.PORT);
 
 // set view engine to pug
 app.set('view engine', 'pug');
