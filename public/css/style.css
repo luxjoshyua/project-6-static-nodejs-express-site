@@ -198,16 +198,3 @@ h1.status {
     margin-bottom: 12px;
   }
 }
-
-/* fix for IE 10 */
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  /* IE10+ CSS styles go here */
-  h1,
-  p,
-  h5,
-  a,
-  img,
-  .cell {
-    opacity: 1 !important;
-  }
-}
