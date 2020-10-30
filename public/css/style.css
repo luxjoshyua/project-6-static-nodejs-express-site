@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap");
 
 h1,
 h2,
@@ -7,7 +7,7 @@ h4,
 h5,
 p {
   /* font-family: 'Merriweather', serif; */
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 h1 {
@@ -69,7 +69,7 @@ a:hover {
 
 .portfolio-me {
   padding: 20px;
-  background: #000; 
+  background: #000;
   color: #fff;
   box-shadow: none !important;
 }
@@ -80,9 +80,9 @@ a:hover {
 }
 
 .portfolio-me a {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 600;
-  color: #FFF;
+  color: #fff;
   font-size: 13px;
   letter-spacing: 2.5px;
   -webkit-text-transform: uppercase;
@@ -100,7 +100,7 @@ a:hover {
 }
 
 .portfolio-breadcrumb a {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 2.5px;
@@ -132,12 +132,12 @@ a:hover {
 }
 
 .portfolio-index .cell {
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
 }
 
 .portfolio-index .cell h5 {
   letter-spacing: 1px;
-  padding-top: 16px; 
+  padding-top: 16px;
 }
 
 .portfolio-meta {
@@ -162,7 +162,7 @@ a:hover {
 }
 
 .error-wrapper {
-  background-image: url('../images/404.jpg');
+  background-image: url("../images/404.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 50vh;
@@ -190,7 +190,7 @@ h1.status {
 
 /* Mobile tweaks to the foundation.css file */
 @media screen and (max-width: 600px) {
-  .grid-x>.small-6 {
+  .grid-x > .small-6 {
     width: 100%;
   }
 
@@ -199,31 +199,8 @@ h1.status {
   }
 }
 
-
-/* Fadein animation effect */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-h1,
-p,
-h5,
-a,
-img,
-.cell {
-  opacity: 0 !important;
-}
-
 /* fix for IE 10 */
-@media all and (-ms-high-contrast: none),
-(-ms-high-contrast: active) {
-
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE10+ CSS styles go here */
   h1,
   p,
