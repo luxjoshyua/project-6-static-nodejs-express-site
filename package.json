@@ -22,8 +22,8 @@
   },
   "homepage": "https://github.com/luxjoshyua/project-6-static-nodejs-express-site#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
     "pug": "^2.0.4"
   },
   "devDependencies": {
